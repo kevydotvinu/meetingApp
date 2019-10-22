@@ -60,7 +60,7 @@ if [[ -z $upcomingIndex ]]; then
       echo "Contact Receptionist" | tee $outputDir/meetingRoomOneTime
       echo "" | tee $outputDir/meetingRoomOneName
       echo "Vacant" | tee $outputDir/meetingRoomOneAgenda
-      echo $upcomingTime | tee $outputDir/meetingRoomOneNextTime
+      echo "$startHour:$startMinute - $endHour:$endMinute" | tee $outputDir/meetingRoomOneNextTime
       sed -n 1p meetingRoomOne/$dateToday/timeBooked/$upcomingTime/meetingData | tee $outputDir/meetingRoomOneNextName
       sed -n 2p meetingRoomOne/$dateToday/timeBooked/$upcomingTime/meetingData | tee $outputDir/meetingRoomOneNextAgenda
     fi

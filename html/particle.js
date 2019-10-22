@@ -18,7 +18,7 @@ function(){for(var a=0,b=["ms","moz","webkit","o"],c=0;c<b.length&&!window.reque
 
 particleground(document.getElementById('particles-foreground'), {
   dotColor: 'rgba(57, 255, 20, 1)',
-  lineColor: 'rgba(57, 255, 20, 0.05)',
+  lineColor: 'rgba(57, 255, 20, 0.2)',
   minSpeedX: 0.3,
   maxSpeedX: 0.6,
   minSpeedY: 0.3,
@@ -32,7 +32,7 @@ particleground(document.getElementById('particles-foreground'), {
 
 particleground(document.getElementById('particles-background'), {
   dotColor: 'rgba(57, 255, 20, 0.5)',
-  lineColor: 'rgba(57, 255, 20, 0.05)',
+  lineColor: 'rgba(57, 255, 20, 0.01)',
   minSpeedX: 0.075,
   maxSpeedX: 0.15,
   minSpeedY: 0.075,

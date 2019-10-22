@@ -1,3 +1,4 @@
+export NCURSES_NO_UTF8_ACS=1
 INPUT=/tmp/menu.sh.$$
 ACTION=/tmp/action.sh.$$
 LISTS=/tmp/list.sh.$$
