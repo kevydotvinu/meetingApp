@@ -63,6 +63,7 @@ if [[ -z $upcomingIndex ]]; then
       echo "$startHour:$startMinute - $endHour:$endMinute" | tee $outputDir/meetingRoomOneNextTime
       sed -n 1p meetingRoomOne/$dateToday/timeBooked/$upcomingTime/meetingData | tee $outputDir/meetingRoomOneNextName
       sed -n 2p meetingRoomOne/$dateToday/timeBooked/$upcomingTime/meetingData | tee $outputDir/meetingRoomOneNextAgenda
+      break;
     fi
   done
 fi

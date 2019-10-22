@@ -1,3 +1,9 @@
 bin/meetingRoomOne
 bin/meetingRoomTwo
+html/meetingRoomOneName
+html/meetingRoomOneTime
+html/meetingRoomOneAgenda
+html/meetingRoomOneNextName
+html/meetingRoomOneNextTime
+html/meetingRoomOneNextAgenda
 .vagrant
