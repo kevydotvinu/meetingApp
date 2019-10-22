@@ -21,7 +21,7 @@
           <span class="event-time"><?php system('cat meetingRoomOneTime');?></span>&nbsp;&nbsp;
           <span class="event-name"><?php system('cat meetingRoomOneName');?></span>&nbsp;&nbsp;
           <br />
-          <span class="event-location">Now - <?php system('cat meetingRoomOneAgenda');?></span>
+          <span class="event-location">Now:&ensp;<?php system('cat meetingRoomOneAgenda');?></span>
         </a>
       </li>
        <li>
@@ -29,7 +29,7 @@
           <span class="event-time"><?php system('cat meetingRoomOneNextTime');?></span>&nbsp;&nbsp;
           <span class="event-name"><?php system('cat meetingRoomOneNextName');?></span>&nbsp;&nbsp;
           <br />
-          <span class="event-location">Upcoming - <?php system('cat meetingRoomOneNextAgenda');?></span>
+          <span class="event-location">Upcoming:&ensp;<?php system('cat meetingRoomOneNextAgenda');?></span>
         </a>
       </li>
     </ul>
