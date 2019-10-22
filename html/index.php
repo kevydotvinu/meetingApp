@@ -4,8 +4,12 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
-<body id="gradient">
-<ul class="main">
+<body>
+<div id="particles-background" class="vertical-centered-box"></div>
+<div id="particles-foreground" class="vertical-centered-box"></div>
+<div class="vertical-centered-box">
+<div class="content">
+      <ul class="main">
   <li class="date">
   <h3><?php echo date("M d");?></h3>
     <p>Schedule of Events</p>
@@ -31,7 +35,8 @@
     </ul>
   </li>
 </ul>
-<script src="jquery.min.js"></script>
-<script src="gradient.js"></script>
+</div>
+</div>
+<script src="particle.js"></script>
 </body>
 </html>
