@@ -3,7 +3,7 @@ nowHour="$(date +%H)"
 nowMinute="$(date +%M)"
 nowTime="$(date +%H:%M)"
 rootDir="$(pwd)"
-outputDir="$(dirname $rootDir)/html"
+outputDir="$(dirname $rootDir)/html/one"
 dataDir="$rootDir/meetingRoomOne/$dateToday/timeBooked"
 bookingTimes=($(find $dataDir -type d -printf '%f\n' | sort | grep -v "\." | grep '^[0-9]' | xargs))
 

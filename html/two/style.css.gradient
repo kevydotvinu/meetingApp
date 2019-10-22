@@ -1,0 +1,105 @@
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+ul.main { 
+  list-style: none;
+  max-width: 85%;
+  margin: 20px auto;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.date {
+  width: 17%;
+  padding: 15% 1% 0 0 ;
+  float: left;
+}
+
+.date h3 {
+  font-size: 45px;
+  color: #FFE7D0;
+  font-family: Ubuntu;
+}
+
+.date p {
+  font-size: 16px;
+  color: #FFE7D0;
+  font-family: Ubuntu;
+}
+
+.events {
+  float: left;
+  width: 80%;
+  border-left: 1px solid #ccc;
+  margin-top: 10%;
+  padding-top: 3%;
+  padding-bottom: 9%;
+#  color: #FFE7D0;
+}
+
+.events-detail {
+  max-width: 650px;
+  list-style: none;
+}
+
+.events-detail li {
+  padding: 30px;
+  border-bottom: 1px dashed #ccc;
+  line-height: 35px;
+  transition: ease .4s all;
+}
+
+#.events-detail li:hover {
+#  background: #e9e9e9;
+#}
+
+.event-time ul{
+  font-weight: 900;
+#  color: #FFE7D0;
+}
+
+.events-detail li a {
+  text-decoration: none;
+  color: #FFE7D0; 
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-family: Ubuntu;
+  font-size: 30px;
+}
+
+.event-location {
+    font-size: 20px;
+    color: #FFE7D0;
+    margin-left: 70px;
+}
+
+
+
+@media all and (max-width: 641px) {
+    .date {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+  
+  .events {
+    border:none;
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .events-detail {
+    padding: 0;
+  }
+  
+  li.date p {
+    margin:0;
+  }
+}
