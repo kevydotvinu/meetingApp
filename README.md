@@ -17,7 +17,7 @@
   - Create and start VM: vagrant up
   - SSH to VM: vagrant ssh
   - Configure application: bash runLAP.sh
-  - Try http://<HOST IP>:8080 on browser
+  - Try http://&lt;HOST IP&gt;:8080 on browser
 
  ### Linux Installation
 
