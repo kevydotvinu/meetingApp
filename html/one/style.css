@@ -1,3 +1,8 @@
+@font-face {
+font-family: Ubuntu;
+src: url('Ubuntu-Regular.ttf') format('truetype');
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
