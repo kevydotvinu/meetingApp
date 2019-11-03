@@ -1,9 +1,9 @@
 ### Windows Installation
 
 #### Software required:
- - vagrant
- - virtualbox
- - gitbash
+ - Vagrant
+ - Virtualbox
+ - Gitbash
 
 #### Installation:
  - Install VirtualBox
@@ -22,8 +22,8 @@
 ### Linux Installation
 
 #### Software required:
- - vagrant
- - virtualbox
+ - Vagrant
+ - Virtualbox
 
 #### Installation:
  - Install VirtualBox
@@ -36,4 +36,4 @@
  - Create and start VM: vagrant up
  - SSH to VM: vagrant ssh
  - Configure application: bash runLAP.sh
- - try http://&lt;HOST IP&gt;:8080 on browser
+ - Try http://&lt;HOST IP&gt;:8080 on browser
