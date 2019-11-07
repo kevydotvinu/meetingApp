@@ -5,7 +5,17 @@ nowTime="$(date +%H:%M)"
 rootDir="$(pwd)"
 outputDir="$(dirname $rootDir)/html/one"
 dataDir="$rootDir/meetingRoomOne/$dateToday/timeBooked"
+
+if [[ -d $rootDir/meetingRoomOne/$dateToday/timeBooked ]]; then
 bookingTimes=($(find $dataDir -type d -printf '%f\n' | sort | grep -v "\." | grep '^[0-9]' | xargs))
+else
+echo "Contact Receptionist" | tee $outputDir/meetingRoomOneTime
+echo "Contact Receptionist" | tee $outputDir/meetingRoomOneNextTime
+echo "Vacant" | tee $outputDir/meetingRoomOneAgenda
+echo "Vacant" | tee $outputDir/meetingRoomOneNextAgenda
+echo "" | tee $outputDir/meetingRoomOneName
+echo "" | tee $outputDir/meetingRoomOneNextName
+fi
 
 for i in ${!bookingTimes[@]}; do
   startHour="$(echo ${bookingTimes[$i]} | cut -d"-" -f1 | cut -d":" -f1)"
