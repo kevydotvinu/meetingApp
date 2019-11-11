@@ -12,6 +12,7 @@
       <ul class="main">
   <li class="date">
   <h3><?php echo date("M d");?></h3>
+  <h4><?php echo date("g:i A");?></h4>
     <p>Schedule of Events</p>
   </li>
   <li class= "events">
@@ -37,6 +38,5 @@
 </ul>
 </div>
 </div>
-<script src="particle.js"></script>
 </body>
 </html>

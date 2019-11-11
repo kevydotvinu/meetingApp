@@ -19,7 +19,7 @@ while true; do
 	case $menuitem in
 		1) DATE=$(dialog --title "Meeting Room I" --backtitle "Schedule of Events" --date-format %F --stdout --calendar Calendar 0 0 0 0)
 		   #PWD=$(pwd)
-		   PWD=/home/brownie/Vagrant/meetingApp/bin
+		   PWD=$HOME/meetingApp/bin
 		   ROOM=$PWD/meetingRoomOne
 
 		   dialog --clear --backtitle "Schedule of Events" \
@@ -238,7 +238,8 @@ while true; do
 
 
 		2) DATE=$(dialog --title "Meeting Room II" --backtitle "Schedule of Events" --date-format %F --stdout --calendar Calendar 0 0 0 0)
-		   PWD=$(pwd)
+		   #PWD=$(pwd)
+			 PWD=$HOME/meetingApp/bin
 		   ROOM=$PWD/meetingRoomTwo
 
 		   dialog --clear --backtitle "Schedule of Events" \

@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
 </head>
 <body>
 <div id="particles-background" class="vertical-centered-box"></div>
@@ -12,6 +12,7 @@
       <ul class="main">
   <li class="date">
   <h3><?php echo date("M d");?></h3>
+  <h4><?php echo date("G:i A");?></h4>
     <p>Schedule of Events</p>
   </li>
   <li class= "events">
@@ -21,7 +22,7 @@
           <span class="event-time"><?php system('cat meetingRoomOneTime');?></span>&nbsp;&nbsp;
           <span class="event-name"><?php system('cat meetingRoomOneName');?></span>&nbsp;&nbsp;
           <br />
-          <span class="event-location">Now - <?php system('cat meetingRoomOneAgenda');?></span>
+          <span class="event-location">Now:&ensp;<?php system('cat meetingRoomOneAgenda');?></span>
         </a>
       </li>
        <li>
@@ -29,7 +30,7 @@
           <span class="event-time"><?php system('cat meetingRoomOneNextTime');?></span>&nbsp;&nbsp;
           <span class="event-name"><?php system('cat meetingRoomOneNextName');?></span>&nbsp;&nbsp;
           <br />
-          <span class="event-location">Upcoming - <?php system('cat meetingRoomOneNextAgenda');?></span>
+          <span class="event-location">Upcoming:&ensp;<?php system('cat meetingRoomOneNextAgenda');?></span>
         </a>
       </li>
     </ul>
@@ -37,6 +38,5 @@
 </ul>
 </div>
 </div>
-<script src="particle.js"></script>
 </body>
 </html>

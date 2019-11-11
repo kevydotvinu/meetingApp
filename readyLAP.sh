@@ -11,3 +11,6 @@ sudo systemctl restart apache2
 sudo systemctl restart sshd
 sudo iptables -t nat -A PREROUTING -m mac --mac-source 00:6f:64:f6:e2:3f -j ACCEPT
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80  -j REDIRECT --to-port 8080
+crontab config/cronjob
+sudo touch /var/log/messages.log
+sudo chown $USER:$USER /var/log/meetings.log
