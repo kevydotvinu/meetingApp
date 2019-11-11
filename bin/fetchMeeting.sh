@@ -2,7 +2,8 @@ dateToday="$(date +%F)"
 nowHour="$(date +%H)"
 nowMinute="$(date +%M)"
 nowTime="$(date +%H:%M)"
-rootDir="$(pwd)"
+#rootDir="$(pwd)
+rootDir="/home/brownie/Vagrant/meetingApp/bin"
 outputDir="$(dirname $rootDir)/html/one"
 dataDir="$rootDir/meetingRoomOne/$dateToday/timeBooked"
 

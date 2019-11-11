@@ -18,7 +18,8 @@ while true; do
 	# make decsion
 	case $menuitem in
 		1) DATE=$(dialog --title "Meeting Room I" --backtitle "Schedule of Events" --date-format %F --stdout --calendar Calendar 0 0 0 0)
-		   PWD=$(pwd)
+		   #PWD=$(pwd)
+		   PWD=/home/brownie/Vagrant/meetingApp/bin
 		   ROOM=$PWD/meetingRoomOne
 
 		   dialog --clear --backtitle "Schedule of Events" \
