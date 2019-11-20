@@ -10,8 +10,8 @@ dataDir="$rootDir/meetingRoomOne/$dateToday/timeBooked"
 if [[ -d $rootDir/meetingRoomOne/$dateToday/timeBooked ]]; then
 bookingTimes=($(find $dataDir -type d -printf '%f\n' | sort | grep -v "\." | grep '^[0-9]' | xargs))
 else
-echo "Contact Receptionist" | tee $outputDir/meetingRoomOneTime
-echo "Contact Receptionist" | tee $outputDir/meetingRoomOneNextTime
+echo "Contact Receptionist" | tee $outputDir/meetingRoomOneName
+echo "Contact Receptionist" | tee $outputDir/meetingRoomOneNextName
 echo "Vacant" | tee $outputDir/meetingRoomOneAgenda
 echo "Vacant" | tee $outputDir/meetingRoomOneNextAgenda
 echo "" | tee $outputDir/meetingRoomOneName
@@ -46,7 +46,8 @@ if [[ -n $meetingTime ]]; then
     sed -n 1p meetingRoomOne/$dateToday/timeBooked/$upcomingStartTime-$upcomingEndTime/meetingData | tee $outputDir/meetingRoomOneNextName
     sed -n 2p meetingRoomOne/$dateToday/timeBooked/$upcomingStartTime-$upcomingEndTime/meetingData | tee $outputDir/meetingRoomOneNextAgenda
   else
-    echo "Contact Receptionist" | tee $outputDir/meetingRoomOneNextTime
+    echo "Contact Receptionist" | tee $outputDir/meetingRoomOneNextName
+    echo "For Booking" | tee $outputDir/meetingRoomOneNextTime
     echo "" | tee $outputDir/meetingRoomOneNextName
     echo "Vacant" | tee $outputDir/meetingRoomOneNextAgenda
   fi
@@ -68,8 +69,8 @@ if [[ -z $upcomingIndex ]]; then
     fi
     if [[ -n ${dateDiff[0]} ]]; then
       upcomingTime=$startHour:$startMinute-$endHour:$endMinute
-      echo "Contact Receptionist" | tee $outputDir/meetingRoomOneTime
-      echo "" | tee $outputDir/meetingRoomOneName
+      echo "Contact Receptionist" | tee $outputDir/meetingRoomOneName
+      echo "For Booking" | tee $outputDir/meetingRoomOneTime
       echo "Vacant" | tee $outputDir/meetingRoomOneAgenda
       echo "$startHour:$startMinute - $endHour:$endMinute" | tee $outputDir/meetingRoomOneNextTime
       sed -n 1p meetingRoomOne/$dateToday/timeBooked/$upcomingTime/meetingData | tee $outputDir/meetingRoomOneNextName

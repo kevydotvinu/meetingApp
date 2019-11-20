@@ -54,7 +54,7 @@ h4 {
   margin-top: 10%;
   padding-top: 3%;
   padding-bottom: 9%;
-#  color: #000000;
+  color: #000000;
 }
 
 .events-detail {
@@ -85,11 +85,41 @@ h4 {
   height: 100%;
   display: block;
   font-family: Ubuntu;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .event-location {
     font-size: 20px;
     color: #000000;
-    margin-left: 70px;
+    margin-left: 40px;
+    line-height: 1px;
+}
+
+.event-slot {
+    font-size: 15px;
+    color: #000000;
+    margin-left: 40px;
+    line-height: 1px;
+}
+
+.footnote {
+  font-family: Ubuntu;
+  font-size: 10px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.event-time {
+  font-size: 30px;
+  margin-left: 0px;
+  line-height: 50px;
+}
+
+.title {
+  font-family: Ubuntu;
+  font-size: 30px;
+  position: fixed;
+  top: 50px;
+  left: 150px;
 }
