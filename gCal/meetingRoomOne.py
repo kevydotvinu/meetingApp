@@ -38,13 +38,14 @@ def main():
     service = build('calendar', 'v3', credentials=creds)
 
     # Call the Calendar API
+    calId = 'e8j7gtlg8pk4j903vvhhfruo2o@group.calendar.google.com'
     now = datetime.datetime.utcnow().isoformat() + 'Z' # 'Z' indicates UTC time
     then = datetime.datetime.utcnow()
     then = then + timedelta(seconds = 5)
     then = then.isoformat() + 'Z'
     today = date.today()
     eod = today.strftime("%Y-%m-%d") + 'T23:59:59.000000Z'
-    events_result = service.events().list(calendarId='primary', timeMin=now, timeMax=then,
+    events_result = service.events().list(calendarId=calId, timeMin=now, timeMax=then,
                                         maxResults=5, singleEvents=True,
                                         orderBy='startTime').execute()
     nowEvents = events_result.get('items', [])
@@ -58,7 +59,7 @@ def main():
         f = open("/vagrant/html/one/meetingRoomOneAgenda", "w")
         f.write("Contact Receptionist")
         f.close()
-        events_result = service.events().list(calendarId='primary', timeMin=now, timeMax=eod,
+        events_result = service.events().list(calendarId=calId, timeMin=now, timeMax=eod,
                                             maxResults=5, singleEvents=True,
                                             orderBy='startTime').execute()
         nextEvents = events_result.get('items', [])
@@ -123,7 +124,7 @@ def main():
         f = open("/vagrant/html/one/meetingRoomOneAgenda", "w")
         f.write(nowEvent['summary'])
         f.close()
-        events_result = service.events().list(calendarId='primary', timeMin=now, timeMax=eod,
+        events_result = service.events().list(calendarId=calId, timeMin=now, timeMax=eod,
                                             maxResults=5, singleEvents=True,
                                             orderBy='startTime').execute()
         nextEvents = events_result.get('items', [])
