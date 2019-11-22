@@ -123,3 +123,8 @@ h4 {
   top: 50px;
   left: 150px;
 }
+
+.footnote img {
+  width: 100px;
+  height: 33px;
+}

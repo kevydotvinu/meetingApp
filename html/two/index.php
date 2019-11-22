@@ -39,6 +39,6 @@
     </ul>
   </li>
 </ul>
-<div class="footnote">Powered By<br><img src="ashtech.png" alt="ashinfo"/></div>
+<div class="footnote">Powered By<br><img src="ashtech.jpg" alt="ashinfo"/></div>
 </body>
 </html>

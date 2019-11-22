@@ -24,7 +24,7 @@ h4 {
 }
 
 .date {
-  width: 17%;
+  width: 20%;
   padding: 15% 1% 0 0 ;
   float: left;
 }
@@ -49,10 +49,11 @@ h4 {
 
 .events {
   float: left;
-  width: 80%;
+  width: 70%;
   border-left: 1px solid #ccc;
   margin-top: 10%;
   padding-top: 3%;
+  padding-left: 1%;
   padding-bottom: 9%;
   color: #000000;
 }
@@ -122,4 +123,16 @@ h4 {
   position: fixed;
   top: 50px;
   left: 150px;
+}
+
+.footnote img {
+  width: 100px;
+  height: 33px;
+}
+
+.green {
+  color: green;
+}
+.red {
+  color: red;
 }
