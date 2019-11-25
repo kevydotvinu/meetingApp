@@ -1,0 +1,11 @@
+version: "2"
+services: 
+  apache2:
+    build:
+      context: "."
+    container_name: apache2
+    image: "meetingapp:v1"
+    network_mode: host
+    volumes:
+      - "./:/vagrant"
+    command: ["sh","-c","/vagrant/apache2.sh"]
