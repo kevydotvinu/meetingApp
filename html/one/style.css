@@ -103,12 +103,20 @@ h4 {
     line-height: 1px;
 }
 
-.footnote {
+.footnote-right {
   font-family: Ubuntu;
   font-size: 10px;
   position: fixed;
   bottom: 40px;
   right: 40px;
+}
+
+.footnote-left {
+  font-family: Ubuntu;
+  font-size: 10px;
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
 }
 
 .event-time {
@@ -125,9 +133,14 @@ h4 {
   left: 150px;
 }
 
-.footnote img {
+.footnote-right img {
   width: 100px;
   height: 33px;
+}
+
+.footnote-left img {
+  width: 90px;
+  height: 90px;
 }
 
 .green {

@@ -66,13 +66,13 @@ def main():
         if nextEvents:
             nextEvent = nextEvents[0]
             start = nextEvent['start'].get('dateTime', nextEvent['start'].get('date'))
-            startEvent = re.split('T|, |\+|',start)
+            startEvent = re.split('T|\+',start)
             startDate = (startEvent[0])
             startTime = (startEvent[1])
             startTime = datetime.datetime.strptime(startTime, "%H:%M:%S")
             startTime = startTime.strftime("%I:%M %p")
             end = nextEvent['end'].get('dateTime', nextEvent['end'].get('date'))
-            endEvent = re.split('T|, |\+|',end)
+            endEvent = re.split('T|\+',end)
             endDate = (endEvent[0])
             endTime = (endEvent[1])
             endTime = datetime.datetime.strptime(endTime, "%H:%M:%S")
@@ -102,14 +102,13 @@ def main():
     if nowEvents:
         nowEvent = nowEvents[0]
         start = nowEvent['start'].get('dateTime', nowEvent['start'].get('date'))
-        startEvent = re.split('T|, |\+|',start)
+        startEvent = re.split('T|\+',start)
         startDate = (startEvent[0])
         startTime = (startEvent[1])
         startTime = datetime.datetime.strptime(startTime, "%H:%M:%S")
         startTime = startTime.strftime("%I:%M %p")
-        print(startTime)
         end = nowEvent['end'].get('dateTime', nowEvent['end'].get('date'))
-        endEvent = re.split('T|, |\+|',end)
+        endEvent = re.split('T|\+',end)
         endDate = (endEvent[0])
         endTime = (endEvent[1])
         endTime = datetime.datetime.strptime(endTime, "%H:%M:%S")
@@ -131,13 +130,13 @@ def main():
         if len(nextEvents) > 1:
             nextEvent = nextEvents[1]
             start = nextEvent['start'].get('dateTime', nextEvent['start'].get('date'))
-            startEvent = re.split('T|, |\+|',start)
+            startEvent = re.split('T|\+',start)
             startDate = (startEvent[0])
             startTime = (startEvent[1])
             startTime = datetime.datetime.strptime(startTime, "%H:%M:%S")
             startTime = startTime.strftime("%I:%M %p")
             end = nextEvent['end'].get('dateTime', nextEvent['end'].get('date'))
-            endEvent = re.split('T|, |\+|',end)
+            endEvent = re.split('T|\+',end)
             endDate = (endEvent[0])
             endTime = (endEvent[1])
             endTime = datetime.datetime.strptime(endTime, "%H:%M:%S")

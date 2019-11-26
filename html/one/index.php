@@ -18,7 +18,7 @@
         <a href="javascript:history.go(0)">
           <span class="event-slot">In Progress</span>
           <br>
-          <span class="event-time" id="color"><?php system('cat meetingRoomOneTime');?></span>
+          <span class="event-time" id="now"><?php system('cat meetingRoomOneTime');?></span>
           <br>
           <span class="event-name"><?php system('cat meetingRoomOneAgenda');?></span>
           <br>
@@ -29,7 +29,7 @@
         <a href="javascript:history.go(0)">
           <span class="event-slot">Upcoming</span>
           <br>
-          <span class="event-time" id="color"><?php system('cat meetingRoomOneNextTime');?></span>
+          <span class="event-time" id="upcoming"><?php system('cat meetingRoomOneNextTime');?></span>
           <br>
           <span class="event-name"><?php system('cat meetingRoomOneNextAgenda');?></span>
           <br>
@@ -39,7 +39,8 @@
     </ul>
   </li>
 </ul>
-<div class="footnote">Powered By<br><img src="ashtech.jpg" alt="ashinfo"/></div>
+<div class="footnote-right">Powered By<br><img src="ashtech.jpg" alt="ashinfo"/></div>
+<div class="footnote-left"><br><img src="tdi.jpg" alt="tdi"/></div>
 <script type="text/javascript" src="color.js"></script>
 </body>
 </html>

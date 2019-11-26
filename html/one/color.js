@@ -1,13 +1,19 @@
-const color = document.getElementById("color");
+const now = document.getElementById("now");
+const upcoming = document.getElementById("upcoming");
 function highlight() {
-  const words = color.textContent.split(" ");
-  color.innerHTML = "";
+  const words = now.textContent.split(" ");
+  now.innerHTML = "";
   words.forEach((word) => {
-    const span = color.appendChild(document.createElement('span'));
+    const span = now.appendChild(document.createElement('span'));
     span.textContent = word + ' ';
     if (word === 'Vacant') span.classList.add('green');
-    if (word === 'bad') span.classList.add('red');
-  });
+  const words = upcoming.textContent.split(" ");
+  upcoming.innerHTML = "";
+  words.forEach((word) => {
+    const span = upcoming.appendChild(document.createElement('span'));
+    span.textContent = word + ' ';
+    if (word === 'Vacant') span.classList.add('green');
+});
 };
 color.addEventListener("blur", highlight);
 highlight();

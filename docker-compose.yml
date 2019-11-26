@@ -2,10 +2,23 @@ version: "2"
 services: 
   apache2:
     build:
-      context: "."
+      context: .
+      dockerfile: apache2Dockerfile
     container_name: apache2
     image: "meetingapp:v1"
     network_mode: host
+#    cap_add:
+#      - NET_ADMIN
     volumes:
       - "./:/vagrant"
-    command: ["sh","-c","/vagrant/apache2.sh"]
+    command: ["sh","-c","/root/apache2.sh"]
+  python3:
+    build:
+     context: .
+     dockerfile: python3Dockerfile
+    container_name: python3
+    image: "python:3"
+    network_mode: host
+    volumes:
+      - "./:/vagrant"
+    command: ["sh","-c","/root/python3.sh"]
