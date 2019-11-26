@@ -7,8 +7,8 @@ services:
     container_name: apache2
     image: "meetingapp:v1"
     network_mode: host
-#    cap_add:
-#      - NET_ADMIN
+    cap_add:
+      - NET_ADMIN
     volumes:
       - "./:/vagrant"
     command: ["sh","-c","/root/apache2.sh"]
@@ -17,7 +17,7 @@ services:
      context: .
      dockerfile: python3Dockerfile
     container_name: python3
-    image: "python:3"
+    image: "python:3-slim"
     network_mode: host
     volumes:
       - "./:/vagrant"

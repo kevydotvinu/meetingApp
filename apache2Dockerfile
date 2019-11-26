@@ -2,6 +2,6 @@ FROM ubuntu:16.04
 COPY apache2.sh /root/
 WORKDIR /vagrant
 RUN apt-get update && \
-    apt-get -y install libapache2-mod-php php apache2 dateutils python3-pip && \
+    apt-get -y install libapache2-mod-php php apache2 iptables && \
     rm -rf /var/lib/apt/lists/* && \
     chmod +x /root/apache2.sh
