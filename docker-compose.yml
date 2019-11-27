@@ -11,6 +11,8 @@ services:
       - NET_ADMIN
     volumes:
       - "./:/vagrant"
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
     command: ["sh","-c","/root/apache2.sh"]
   python3:
     build:
@@ -21,4 +23,6 @@ services:
     network_mode: host
     volumes:
       - "./:/vagrant"
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
     command: ["sh","-c","/root/python3.sh"]

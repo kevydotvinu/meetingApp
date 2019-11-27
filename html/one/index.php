@@ -40,7 +40,7 @@
   </li>
 </ul>
 <div class="footnote-right">Powered By<br><img src="ashtech.jpg" alt="ashinfo"/></div>
-<div class="footnote-left"><br><img src="tdi.jpg" alt="tdi"/></div>
+<div class="footnote-left"><br><img src="phoenix.jpg" alt="tdi"/></div>
 <script type="text/javascript" src="color.js"></script>
 </body>
 </html>
