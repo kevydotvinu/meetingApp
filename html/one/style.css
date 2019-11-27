@@ -50,7 +50,7 @@ h4 {
 .events {
   float: left;
   width: 70%;
-  border-left: 1px solid #ccc;
+  border-left: 1px dashed #000000;
   margin-top: 10%;
   padding-top: 3%;
   padding-left: 1%;
