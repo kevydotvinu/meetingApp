@@ -6,12 +6,9 @@
 </head>
 <body>
 <!---<div class="title">Meeting Room One</div>--->
+<h3 class="title">PRIME</h3>
+<h3 class="subtitle"><?php echo date("M d");?> - <?php echo date("g:i A");?></h3>
 <ul class="main">
-  <li class="date">
-    <h3><?php echo date("M d");?></h3>
-    <h4><?php echo date("g:i A");?></h4>
-    <p>Meeting Room One</p>
-  </li>
   <li class= "events">
     <ul class="events-detail">
       <li>
@@ -25,6 +22,7 @@
           <span class="event-location-ip">Scheduled by <?php system('cat meetingRoomOneName');?></span>
         </a>
       </li>
+    <h4 class="line"></h4>
       <li>
         <a href="javascript:history.go(0)">
           <span class="event-slot">Upcoming</span>
