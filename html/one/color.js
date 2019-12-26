@@ -5,7 +5,7 @@ function highlight() {
   words.forEach((word) => {
     const span = now.appendChild(document.createElement('span'));
     span.textContent = word + ' ';
-    if (word === 'Vacant') document.body.style.backgroundColor ="#DDFFDD";
+    if (word === 'VACANT') document.body.style.backgroundColor ="palegreen";
   });
 };
 now.addEventListener("blur", highlight);

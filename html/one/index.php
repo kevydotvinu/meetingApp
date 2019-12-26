@@ -16,13 +16,13 @@
     <ul class="events-detail">
       <li>
         <a href="javascript:history.go(0)">
-          <span class="event-slot">In Progress</span>
+          <span class="event-slot-ip">In Progress</span>
           <br>
-          <span class="event-time" id="now"><?php system('cat meetingRoomOneTime');?></span>
+          <span class="event-time-ip" id="now"><?php system('cat meetingRoomOneTime');?></span>
           <br>
-          <span class="event-name"><?php system('cat meetingRoomOneAgenda');?></span>
+          <span class="event-name-ip"><?php system('cat meetingRoomOneAgenda');?></span>
           <br>
-          <span class="event-location">Scheduled by <?php system('cat meetingRoomOneName');?></span>
+          <span class="event-location-ip">Scheduled by <?php system('cat meetingRoomOneName');?></span>
         </a>
       </li>
       <li>

@@ -4,7 +4,7 @@ src: url('Ubuntu-Regular.ttf') format('truetype');
 }
 
 body {
-  background: #FFBBBB
+  background: #FFFFFF
 }
 
 ul.main {
@@ -96,11 +96,25 @@ h4 {
     line-height: 1px;
 }
 
+.event-location-ip {
+    font-size: 30px;
+    color: #000000;
+    margin-left: 40px;
+    line-height: 2px;
+}
+
 .event-slot {
     font-size: 15px;
     color: #000000;
     margin-left: 40px;
     line-height: 1px;
+}
+
+.event-slot-ip {
+    font-size: 25px;
+    color: #000000;
+    margin-left: 40px;
+    line-height: 50px;
 }
 
 .footnote-right {
@@ -123,6 +137,18 @@ h4 {
   font-size: 30px;
   margin-left: 0px;
   line-height: 50px;
+}
+
+.event-time-ip {
+  font-size: 40px;
+  margin-left: 0px;
+  line-height: 30px;
+}
+
+.event-name-ip {
+  font-size: 48px;
+  margin-left: 0px;
+  line-height: 80px;
 }
 
 .title {
